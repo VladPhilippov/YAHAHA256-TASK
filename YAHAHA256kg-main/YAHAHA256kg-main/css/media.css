@@ -22,10 +22,14 @@
       .wings__info{
         background-image: url(../img/imgMain1/yahahawingsMbl.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         background-position: center;
         text-align: center;
         padding: 87px 22px;
-      }
-     
+      } 
+}
+@media screen and (max-width: 400px){
+    .wings__info{
+        padding: 68px 22px;
+    }
 }
