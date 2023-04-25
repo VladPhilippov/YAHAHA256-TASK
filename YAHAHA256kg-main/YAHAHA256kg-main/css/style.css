@@ -1,0 +1,117 @@
+/* =========================== COPMONENTS =========================== */
+.container{
+  max-width: 1230px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* --- Title --- */
+.title{
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: var(--text-title); 
+  line-height: 47px;
+  text-align: center;
+  color: var(--text-light); 
+}
+
+/* --- Buttton --- */
+.btn{
+  font-size: var(--text-btn);
+  border-radius: 105px;  
+  padding: 12px 30px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.btn::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;height: 100%;
+  left: 0; top: 0;
+  border-radius: 105px; 
+  z-index: -1;
+  opacity: 0.2;
+  transition: transform .2s ease-in;
+}
+.btn:hover::before{
+  transform: scaleY(1.2) scaleX(1.06);
+}
+.btn:active::before{
+  transition: transform .1s ease-in;
+  transform: scaleY(1.13) scaleX(1.04);
+}
+
+
+.btn--green{ background-color: var(--btn-green); }
+.btn--green::before{
+  background-color: inherit;
+}
+
+.btn--yellow{ background-color: var(--btn-yellow); }
+.btn--yellow::before{
+  background-color: inherit;
+}
+
+.btn--purple{ background-color: var(--btn-purple); }
+.btn--purple::before{
+  background-color: inherit;
+}
+
+
+.btn__icon{
+  margin-right: 12px;
+  width: 35px;
+  height: 35px;
+}
+
+.btn__icon--download img{
+  transform: scale(1.2);
+}
+
+.btn__icon img{
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.btn__title{
+  color: var(--text-black);
+  font-weight: 800;
+  font-size: var(--text-btn);
+  line-height: 23px;
+}
+
+
+/* ====================================================================== */
+/* =========================== SECTION STYLES =========================== */
+/* ====================================================================== */
+/* =-=-=-=-=-=-=-=-=-=- MAIN section =-=-=-=-=-=-=-=-=-= */
+.wings__container{
+  max-width: 1455px;
+  padding-top: 52px;
+  padding-bottom: 145px;
+}
+
+.wings-info__top{
+  font-size: 16px;
+  color: rgba(216, 225, 239, 0.6);
+  font-family: 'Inter', sans-serif;
+  line-height: 19.5px;
+}
+.wings-info__bottom{
+  font-size: 22px;
+  color: rgba(216, 225, 239, 0.87);
+  font-family: 'Inter', sans-serif;
+  line-height: 44px;
+}
+
+.wings__info{
+  background-image: url(../img/imgMain1/yahahawings.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 53px 0;
+}

@@ -1,0 +1,31 @@
+@media screen and (max-width: 450px) {
+    .wrapper{
+        overflow-x: hidden;
+      }
+
+      .wings__container{
+        padding-top: 23px;
+        padding-bottom: 50px;
+      }
+      .wings-info__top{
+        font-size: 14px;
+        color: rgba(216, 225, 239, 0.6);
+        font-family: 'Inter', sans-serif;
+        line-height: 20px;
+      }
+      .wings-info__bottom{
+        font-size: 18px;
+        color: rgba(216, 225, 239, 0.87);
+        font-family: 'Inter', sans-serif;
+        line-height: 28px;
+      }
+      .wings__info{
+        background-image: url(../img/imgMain1/yahahawingsMbl.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 87px 22px;
+      }
+     
+}
